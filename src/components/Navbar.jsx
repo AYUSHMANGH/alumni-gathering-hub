@@ -16,8 +16,10 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <ul className="flex space-x-4">
             <li><Link to="/" className="hover:text-blue-200">Home</Link></li>
-            <li><Link to="/about" className="hover:text-blue-200">About</Link></li>
-            <li><Link to="/contact" className="hover:text-blue-200">Contact</Link></li>
+            <li><Link to="/directory" className="hover:text-blue-200">Directory</Link></li>
+            <li><Link to="/jobs" className="hover:text-blue-200">Jobs</Link></li>
+            <li><Link to="/events" className="hover:text-blue-200">Events</Link></li>
+            <li><Link to="/donate" className="hover:text-blue-200">Donate</Link></li>
           </ul>
           <DarkModeToggle />
         </div>

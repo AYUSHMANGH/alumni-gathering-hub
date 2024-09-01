@@ -1,5 +1,9 @@
-import { HomeIcon, InfoIcon, MailIcon } from "lucide-react";
+import { HomeIcon, UsersIcon, BriefcaseIcon, CalendarIcon, HeartIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
+import Directory from "./pages/Directory.jsx";
+import Jobs from "./pages/Jobs.jsx";
+import Events from "./pages/Events.jsx";
+import Donate from "./pages/Donate.jsx";
 
 /**
  * Central place for defining the navigation items. Used for navigation components and routing.
@@ -12,15 +16,27 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "About",
-    to: "/about",
-    icon: <InfoIcon className="h-4 w-4" />,
-    page: <div>About Page</div>,
+    title: "Directory",
+    to: "/directory",
+    icon: <UsersIcon className="h-4 w-4" />,
+    page: <Directory />,
   },
   {
-    title: "Contact",
-    to: "/contact",
-    icon: <MailIcon className="h-4 w-4" />,
-    page: <div>Contact Page</div>,
+    title: "Jobs",
+    to: "/jobs",
+    icon: <BriefcaseIcon className="h-4 w-4" />,
+    page: <Jobs />,
+  },
+  {
+    title: "Events",
+    to: "/events",
+    icon: <CalendarIcon className="h-4 w-4" />,
+    page: <Events />,
+  },
+  {
+    title: "Donate",
+    to: "/donate",
+    icon: <HeartIcon className="h-4 w-4" />,
+    page: <Donate />,
   },
 ];
