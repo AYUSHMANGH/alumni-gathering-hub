@@ -6,7 +6,10 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 dark:bg-blue-800 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">Alumni Tracker</Link>
+        <Link to="/" className="flex items-center space-x-2">
+          <img src="/logo.svg" alt="Alumni Tracker Logo" className="h-8 w-8 text-white" />
+          <span className="text-2xl font-bold">Alumni Tracker</span>
+        </Link>
         <div className="flex items-center space-x-4">
           <ul className="flex space-x-4">
             <li><Link to="/" className="hover:text-blue-200">Home</Link></li>
