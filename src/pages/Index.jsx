@@ -23,7 +23,7 @@ const Index = () => {
           <p className="text-center mb-8">Connect, engage, and give back to your alma mater</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {featuresData.map((feature) => (
-              <Card key={feature.id} className="dark:bg-gray-800">
+              <Card key={feature.id} className="dark:bg-gray-800 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
                 <CardHeader>
                   <CardTitle>{feature.title}</CardTitle>
                 </CardHeader>
